@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pay with UPI</title>
+<style>
+  body{font-family:system-ui,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:24px;text-align:center;background:#f5f5f7;color:#111}
+  a.btn{display:inline-block;margin-top:20px;padding:16px 36px;background:#1a73e8;color:#fff;text-decoration:none;border-radius:12px;font-size:18px;font-weight:600}
+  p{color:#555}
+</style>
+</head>
+<body>
+  <h2>Opening your UPI app…</h2>
+  <p>If nothing happens, tap the button below.</p>
+  <a class="btn" id="pay" href="upi://pay?pa=MAB0450696A0320230@Yesbank&pn=MeraLaundry&cu=INR">Pay now</a>
+  <script>
+    window.location.href = document.getElementById("pay").href;
+  </script>
+</body>
+</html>
